@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cart.html</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Shopfinity</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-    Cart
+  <!-- Navigation Bar -->
+  <header>
+    <a href="index.html">
+      <img src="images/shopfinity.jpg" alt="Shopfinity Logo" class="logo">
+    </a>
+    <input type="text" placeholder="Search products, brands and categories" class="search-bar">
+    <button class="search-btn">Search</button>
+    <div class="nav-links">
+      <div class="account-dropdown">
+        <span id="accountText">Account</span>
+        <div class="dropdown-content" id="accountDropdown">
+          <a href="login.html">Sign In</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+      </div>
+      <a href="help.html">Help</a>
+      <a href="cart.html" class="cart">Cart (0)</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Main Cart Content -->
+    <main class="main-content">
+      <h1>Your Shopping Cart</h1>
+      <div id="cartContent">
+        <p>Your cart has <span id="cartCountDisplay">0</span> item(s).</p>
+      </div>
+      <button id="clearCart">Clear Cart</button>
+    </main>
+  </div>
+
+  <footer>
+    Shopfinity Enterprises Limited 2025 &copy;
+  </footer>
+
+  <script>
+    // Update the cart count display on the cart page
+    document.addEventListener("DOMContentLoaded", () => {
+      const cartCountDisplay = document.getElementById("cartCountDisplay");
+      const cartCount = localStorage.getItem("cartCount") || "0";
+      cartCountDisplay.textContent = cartCount;
+
+      // Update header cart display
+      const cartLink = document.querySelector(".cart");
+      if (cartLink) {
+        cartLink.innerText = "Cart (" + cartCount + ")";
+      }
+
+      // Clear Cart button functionality
+      const clearCartButton = document.getElementById("clearCart");
+      clearCartButton.addEventListener("click", () => {
+        localStorage.setItem("cartCount", "0");
+        cartCountDisplay.textContent = "0";
+        if (cartLink) {
+          cartLink.innerText = "Cart (0)";
+        }
+      });
+    });
+  </script>
 </body>
-</html>
+                             </html>
