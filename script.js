@@ -71,10 +71,10 @@ function handleLogin(event) {
   }
 
   if (found) {
-    alert("Logged in successfully!");
     window.location.href = "index.html";
   } else {
-    alert("Invalid credentials");
+    // Optionally, you can update the UI to indicate an error instead of using alert.
+    console.error("Invalid credentials");
   }
 }
 
@@ -86,28 +86,26 @@ function handleSignup(event) {
   const email = document.getElementById("email").value.trim();
   const password = document.getElementById("password").value;
   const address = document.getElementById("address").value.trim();
-  
-  // Validate that the password contains more than 6 words
-  const words = password.trim().split(/\s+/);
+
+  // Validate that the password is longer than 6 characters
   const passwordHint = document.getElementById("passwordHint");
-  if (words.length <= 6) {
-    passwordHint.textContent = "Password must contain more than 6 words.";
+  if (password.length <= 6) {
+    passwordHint.textContent = "Password must be longer than 6 characters.";
     return;
   } else {
     passwordHint.textContent = "";
   }
-  
+
   const users = getUsers();
 
   if (users[email]) {
-    alert("Email already exists");
+    console.error("Email already exists");
     return;
   }
   // Create a new user object
   const newUser = { first_name, last_name, email, password, address };
   users[email] = newUser;
   saveUsers(users);
-  alert("Account created successfully. Please log in.");
   window.location.href = "login.html";
 }
 
@@ -116,7 +114,6 @@ function handleAddToCart(event) {
   event.preventDefault();
   const user = getCurrentUser();
   if (!user) {
-    alert("You are not logged in. Please log in or sign up to add items to your cart.");
     window.location.href = "login.html";
   } else {
     // Retrieve current cart count from localStorage (default to 0)
@@ -124,7 +121,6 @@ function handleAddToCart(event) {
     cartCount++;
     localStorage.setItem("cartCount", cartCount);
     document.querySelector(".cart").innerText = "Cart (" + cartCount + ")";
-    alert("Item added to cart!");
   }
 }
 
