@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopfinity - Online Shopping in Nigeria</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <a href="index.html">
+      <img src="images/shopfinity.jpg" alt="Shopfinity Logo" class="logo">
+    </a>
+    <input type="text" placeholder="Search products, brands and categories" class="search-bar">
+    <button class="search-btn">Search</button>
+    <div class="nav-links">
+      <div class="account-dropdown">
+        <span id="accountText">Account</span>
+        <div class="dropdown-content" id="accountDropdown">
+          <a href="login.html">Sign In</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+      </div>
+      <a href="help.html">Help</a>
+      <a href="cart.html" class="cart">Cart (0)</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar Categories -->
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#appliances">Appliances</a></li>
+        <li><a href="#phones-tablets">Phones & Tablets</a></li>
+        <li><a href="#health-beauty">Health & Beauty</a></li>
+        <li><a href="#home-office">Home & Office</a></li>
+        <li><a href="#electronics">Electronics</a></li>
+        <li><a href="#fashion">Fashion</a></li>
+        <li><a href="#supermarket">Supermarket</a></li>
+        <li><a href="#computing">Computing</a></li>
+        <li><a href="#baby-products">Baby Products</a></li>
+        <li><a href="#gaming">Gaming</a></li>
+        <li><a href="#musical-instruments">Musical Instruments</a></li>
+        <li><a href="#gift-cards">Gift Cards</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="banner">
+        <h1>Welcome to Shopfinity</h1>
+        <p>Find everything you need at the best prices in Nigeria!</p>
+      </div>
+
+      <!-- Category Sections -->
+      <section id="appliances" class="category-section">
+        <h2>Appliances</h2>
+        <ul class="product-list">
+          <li>
+            <span class="product-name">Washing Machine</span>
+            <button class="add-to-cart" data-product="Washing Machine">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Refrigerator</span>
+            <button class="add-to-cart" data-product="Refrigerator">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Microwave Oven</span>
+            <button class="add-to-cart" data-product="Microwave Oven">Add to Cart</button>
+          </li>
+        </ul>
+      </section>
+
+      <section id="phones-tablets" class="category-section">
+        <h2>Phones & Tablets</h2>
+        <ul class="product-list">
+          <li>
+            <span class="product-name">Samsung S25 Ultra</span>
+            <button class="add-to-cart" data-product="Samsung S25 Ultra">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Samsung Tab A8</span>
+            <button class="add-to-cart" data-product="Samsung Tab A8">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">iPhone 16 Pro Max</span>
+            <button class="add-to-cart" data-product="iPhone 16 Pro Max">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">iPhone 15 Pro Max</span>
+            <button class="add-to-cart" data-product="iPhone 15 Pro Max">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">iPhone 14 Pro Max</span>
+            <button class="add-to-cart" data-product="iPhone 14 Pro Max">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">iPhone 13 Pro Max</span>
+            <button class="add-to-cart" data-product="iPhone 13 Pro Max">Add to Cart</button>
+          </li>
+        </ul>
+      </section>
+
+      <section id="health-beauty" class="category-section">
+        <h2>Health & Beauty</h2>
+        <ul class="product-list">
+          <li>
+            <span class="product-name">Skincare Product</span>
+            <button class="add-to-cart" data-product="Skincare Product">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Hair Care Product</span>
+            <button class="add-to-cart" data-product="Hair Care Product">Add to Cart</button>
+          </li>
+        </ul>
+      </section>
+
+      <section id="home-office" class="category-section">
+        <h2>Home & Office</h2>
+        <ul class="product-list">
+          <li>
+            <span class="product-name">Office Chair</span>
+            <button class="add-to-cart" data-product="Office Chair">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Desk Lamp</span>
+            <button class="add-to-cart" data-product="Desk Lamp">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Pens</span>
+            <button class="add-to-cart" data-product="Pens">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Pencil</span>
+            <button class="add-to-cart" data-product="Pencil">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Mechanical Pencil</span>
+            <button class="add-to-cart" data-product="Mechanical Pencil">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">HP Printer</span>
+            <button class="add-to-cart" data-product="HP Printer">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">MacBook Computer</span>
+            <button class="add-to-cart" data-product="MacBook Computer">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">HP Computer</span>
+            <button class="add-to-cart" data-product="HP Computer">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Wireless Mouse</span>
+            <button class="add-to-cart" data-product="Wireless Mouse">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Trash Can</span>
+            <button class="add-to-cart" data-product="Trash Can">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Water Dispenser</span>
+            <button class="add-to-cart" data-product="Water Dispenser">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Correction Fluid/Pen</span>
+            <button class="add-to-cart" data-product="Correction Fluid/Pen">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Sellotape</span>
+            <button class="add-to-cart" data-product="Sellotape">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Steplar</span>
+            <button class="add-to-cart" data-product="Steplar">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Staples</span>
+            <button class="add-to-cart" data-product="Staples">Add to Cart</button>
+          </li>
+        </ul>
+      </section>
+
+      <section id="electronics" class="category-section">
+        <h2>Electronics</h2>
+        <ul class="product-list">
+          <li>
+            <span class="product-name">LED TV</span>
+            <button class="add-to-cart" data-product="LED TV">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Soundbar</span>
+            <button class="add-to-cart" data-product="Soundbar">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">LG Remote</span>
+            <button class="add-to-cart" data-product="LG Remote">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Binatone Fan</span>
+            <button class="add-to-cart" data-product="Binatone Fan">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">LG Speaker</span>
+            <button class="add-to-cart" data-product="LG Speaker">Add to Cart</button>
+          </li>
+        </ul>
+      </section>
+
+      <section id="fashion" class="category-section">
+        <h2>Fashion</h2>
+        <ul class="product-list">
+          <li>
+            <span class="product-name">T-Shirt</span>
+            <button class="add-to-cart" data-product="T-Shirt">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Jeans</span>
+            <button class="add-to-cart" data-product="Jeans">Add to Cart</button>
+          </li>
+        </ul>
+      </section>
+
+      <section id="supermarket" class="category-section">
+        <h2>Supermarket</h2>
+        <ul class="product-list">
+          <li>
+            <span class="product-name">Rice</span>
+            <button class="add-to-cart" data-product="Rice">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Cooking Oil</span>
+            <button class="add-to-cart" data-product="Cooking Oil">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Salt</span>
+            <button class="add-to-cart" data-product="Salt">Add to Cart</button>
+          </li>
+        </ul>
+      </section>
+
+      <section id="computing" class="category-section">
+        <h2>Computing</h2>
+        <ul class="product-list">
+          <li>
+            <span class="product-name">Laptop Model X</span>
+            <button class="add-to-cart" data-product="Laptop Model X">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Desktop Model Y</span>
+            <button class="add-to-cart" data-product="Desktop Model Y">Add to Cart</button>
+          </li>
+        </ul>
+      </section>
+
+      <section id="baby-products" class="category-section">
+        <h2>Baby Products</h2>
+        <ul class="product-list">
+          <li>
+            <span class="product-name">Baby Diapers</span>
+            <button class="add-to-cart" data-product="Baby Diapers">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Baby Formula</span>
+            <button class="add-to-cart" data-product="Baby Formula">Add to Cart</button>
+          </li>
+        </ul>
+      </section>
+
+      <section id="gaming" class="category-section">
+        <h2>Gaming</h2>
+        <ul class="product-list">
+          <li>
+            <span class="product-name">Gaming Console</span>
+            <button class="add-to-cart" data-product="Gaming Console">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Video Game Title</span>
+            <button class="add-to-cart" data-product="Video Game Title">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">ASUS Gaming Computer</span>
+            <button class="add-to-cart" data-product="ASUS Gaming Computer">Add to Cart</button>
+          </li>
+        </ul>
+      </section>
+
+      <section id="musical-instruments" class="category-section">
+        <h2>Musical Instruments</h2>
+        <ul class="product-list">
+          <li>
+            <span class="product-name">Acoustic Guitar</span>
+            <button class="add-to-cart" data-product="Acoustic Guitar">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Keyboard</span>
+            <button class="add-to-cart" data-product="Keyboard">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Violin</span>
+            <button class="add-to-cart" data-product="Violin">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Electric Guitar</span>
+            <button class="add-to-cart" data-product="Electric Guitar">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Drums</span>
+            <button class="add-to-cart" data-product="Drums">Add to Cart</button>
+          </li>
+        </ul>
+      </section>
+
+      <section id="gift-cards" class="category-section">
+        <h2>Gift Cards</h2>
+        <ul class="product-list">
+          <li>
+            <span class="product-name">Roblox Gift Card 50 Robux</span>
+            <button class="add-to-cart" data-product="Roblox Gift Card 50 Robux">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Roblox Gift Card 100 Robux</span>
+            <button class="add-to-cart" data-product="Roblox Gift Card 100 Robux">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Roblox Gift Card 200 Robux</span>
+            <button class="add-to-cart" data-product="Roblox Gift Card 200 Robux">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Roblox Gift Card 500 Robux</span>
+            <button class="add-to-cart" data-product="Roblox Gift Card 500 Robux">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Roblox Gift Card 1000 Robux</span>
+            <button class="add-to-cart" data-product="Roblox Gift Card 1000 Robux">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Fortnite Gift Card 500 V-Bucks</span>
+            <button class="add-to-cart" data-product="Fortnite Gift Card 500 V-Bucks">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Fortnite Gift Card 1000 V-Bucks</span>
+            <button class="add-to-cart" data-product="Fortnite Gift Card 1000 V-Bucks">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">XBox Game Pass</span>
+            <button class="add-to-cart" data-product="XBox Game Pass">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Apple Gift Card $100</span>
+            <button class="add-to-cart" data-product="Apple Gift Card $100">Add to Cart</button>
+          </li>
+          <li>
+            <span class="product-name">Apple Gift Card $200</span>
+            <button class="add-to-cart" data-product="Apple Gift Card $200">Add to Cart</button>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <!-- Modal Pop-Up for Login/Signup Prompt -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <p>Hmm, it looks like you're not logged in into an account. Would you like to Login or Signup?</p>
+      <div class="modal-buttons">
+        <button id="modalLogin">Login</button>
+        <button id="modalSignup">Signup</button>
+        <button id="modalCancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Shopfinity Enterprises Limited 2025 &copy;
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
